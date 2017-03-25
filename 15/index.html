@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Yuanzheng Zhu</title>
+</head>
+
+
+
+<style>
+body{
+	background-image: linear-gradient(to bottom, #FA8080,pink);
+
+}
+html{
+  min-height: 100%;
+  overflow: hidden;
+}
+body{
+  height: calc(100vh - 8em);
+  padding: 4em;
+  color: rgba(255,255,255,.75);
+  font-family: 'Anonymous Pro', monospace;
+  background-color: pink;
+}
+.line-1{
+    position: relative;
+    top: 30%;
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+}
+
+
+.anim-typewriter{
+  animation: typewriter 6s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 24em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+
+.va{
+  width: 500px;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+}
+.essay{
+  width: 500px;
+  position: fixed;
+  bottom: 10px;
+  left: 1200px;
+}
+
+
+a{
+  colour: white;
+
+  text-decoration: underline;
+  background-color: white;
+  width: 300;
+  height: 20px;
+  border-radius: 10px;
+}
+
+a:link {
+    color: pink;
+}
+
+a:visited {
+    color: pink;
+    text-decoration: line-through;
+}
+
+a:hover {
+    color: white;
+    background-color: pink;
+    font-weight:bold;
+}
+
+a:active {
+    color: pink;
+}
+</style>
+<body>
+  <p class="line-1 anim-typewriter">
+    Welcome to Yuanzheng's homepage \(OvO)/
+  </p>
+  <div class="va">
+    <a href="15 variations.html">15 variations</a>
+  </div>
+
+  <div class="essay">
+    <a href="essay.html">essay</a>
+  </div>
+
+
+</body>

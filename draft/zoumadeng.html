@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Homepage</title>
+</head>
+<style>
+@font-face {
+    font-family: Agency;
+    src: url(/uploads/160601/agency-fb-bold.woff);
+}
+body {
+    font-family: Avenir, sans-serif;
+    marging: 0;
+}
+#marquee {
+    margin-top: 3rem;
+    -webkit-perspective: 500px;
+    perspective: 500px;
+    font-size: 0;
+    font-family: Agency, sans-serif;
+}
+#marquee div {
+    display: inline-block;
+    height: 12rem;
+    width: 20rem;
+    position: relative;
+}
+#marquee div:first-of-type {
+    background: #e5233e;
+    -webkit-transform-origin: top right;
+    transform-origin: top right;
+    -webkit-transform: rotateY(-40deg);
+    transform: rotateY(-40deg);
+    color: #fff;
+}
+#marquee div:last-of-type {
+    background: #b31e31;
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+    -webkit-transform: rotateY(45deg);
+    transform: rotateY(45deg);
+    color: #f8c9d9;
+}
+#marquee div {
+    font-size: 8rem;
+    overflow: hidden;
+}
+#marquee div span {
+    position: absolute;
+    width: 400%;
+    line-height: 1.4;
+}
+#marquee div:first-of-type span {
+    -webkit-transform: translateX(40rem);
+    transform: translateX(40rem);
+    -webkit-animation: leftcrawl 14s linear infinite;
+    animation: leftcrawl 14s linear infinite;
+    text-shadow: 4px 0px 4px rgba(0, 0, 0, 0.3);
+}
+#marquee div:last-of-type span {
+    -webkit-transform: translateX(20rem);
+    transform: translateX(20rem);
+    -webkit-animation: rightcrawl 14s linear infinite;
+    animation: rightcrawl 14s linear infinite;
+}
+@-webkit-keyframes leftcrawl {
+    to {
+        -webkit-transform: translateX(-100rem);
+        transform: translateX(-100rem);
+    }
+}
+@keyframes leftcrawl {
+    to {
+        -webkit-transform: translateX(-100rem);
+        transform: translateX(-100rem);
+    }
+}
+@-webkit-keyframes rightcrawl {
+    to {
+        -webkit-transform: translateX(-130rem);
+        transform: translateX(-130rem);
+    }
+}
+@keyframes rightcrawl {
+    to {
+        -webkit-transform: translateX(-130rem);
+        transform: translateX(-130rem);
+    }
+}
+
+a{
+	color:red;
+	font-family: Agency, sans-serif;
+	font-size: 20px;
+	margin-left: 1000px;
+
+}
+a:hover{
+	color:#80ffff;
+}
+</style>
+
+<body>
+	<div id="marquee">
+    <div>
+        <span>Homepage</span>
+    </div>
+    <div aria-hidden="true">
+        <span>Yuanzheng's</span>
+    </div>
+</div>
+<div style="width:1200px;height:5px;margin-top:120px ;padding:0px;
+background-color:#D5D5D5;overflow:hidden;">
+</div>
+<div style="width:1200px;height:5px;margin-top:50px ;padding:0px;
+background-color:#D5D5D5;overflow:hidden;">
+</div>
+<br><br><div>
+	<a href="15.html">15</a> &nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="essay.html">essay</a>
+</div>
+
+</body>
