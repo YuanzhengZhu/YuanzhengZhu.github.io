@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>level 5 b</title>
+  </head>
+
+  <style media="screen">
+  .return{
+  		position: fixed;
+  		top: 10%;
+  		left: 80%;
+  		width: 35px;
+  		height: 35px;
+  		border-radius: 20px;
+  		background-color: pink;
+      z-index: 2;
+  	}
+    .home{
+      position: fixed;
+      top: 10%;
+      left: 85%;
+      width: 35px;
+      height: 35px;
+      background-color: #ccf2ff;
+    }
+  	.next{
+  		position: fixed;
+  		top: 10%;
+  		left: 90%;
+  		width: 35px;
+  		height: 35px;
+  		border-radius: 20px;
+  		background-color: pink;
+  	}
+    .return:hover{
+      background-color: #ff66a3;
+    }
+    .home:hover{
+      background-color: #ff66a3;
+    }
+    .next:hover{
+      background-color: #ff66a3;
+    }
+  .worse{
+    font-family: bonvenoCF;
+    font-size: 50px;
+    text-align: center;
+padding-top: 60px;
+    margin-top: 0px;
+  }
+  .div1 {
+      width: 60px;
+      height: 1000px;
+      position:fixed;
+      text-align: center;
+      animation-name: example1;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      font-family: bonvenoCF;
+      font-size: 40px;
+      border: 5px solid white;
+      vertical-align:middle;
+      color: white;
+      padding-top: 15px;
+
+  }
+
+  @keyframes example1 {
+      0%   {background-color:#ff4d4d; left:0px; top:500px;}
+      25%  {background-color:#ff4d4d; left:0px; top:400px;}
+      50%  {background-color:#ff4d4d; left:0px; top:350px;}
+      75%  {background-color:#ff4d4d; left:0px; top:400px;}
+      100%  {background-color:#ff4d4d; left:0px; top:500px;}
+
+  }
+  .div2 {
+      width: 60px;
+      height: 1000px;
+      position:fixed;
+      text-align: center;
+      animation-name: example2;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      font-family: bonvenoCF;
+      font-size: 40px;
+      border: 5px solid white;
+      color: white;
+  }
+
+  @keyframes example2 {
+      0%   {background-color:#ffb366; left:70px; top:400px;}
+      25%  {background-color:#ffb366; left:70px; top:300px;}
+      50%  {background-color:#ffb366; left:70px; top:600px;}
+      75%  {background-color:#ffb366; left:70px; top:500px;}
+      100%  {background-color:#ffb366; left:70px; top:400px;}
+
+  }
+  .div3 {
+      width: 60px;
+      height: 1000px;
+      position:fixed;
+      text-align: center;
+      animation-name: example3;
+      animation-iteration-count: infinite;
+      animation-duration: 2s;
+      font-family: bonvenoCF;
+      font-size: 40px;
+      border: 5px solid white;
+      color: white;
+  }
+
+  @keyframes example3 {
+      0%   {background-color:#d5ff80; left:140px; top:300px;}
+      25%  {background-color:#d5ff80; left:140px; top:400px;}
+      50%  {background-color:#d5ff80; left:140px; top:500px;}
+      75%  {background-color:#d5ff80; left:140px; top:600px;}
+      100%  {background-color:#d5ff80; left:140px; top:300px;}
+
+  }
+  .div4 {
+      width: 60px;
+      height: 1000px;
+      position:fixed;
+      text-align: center;
+      animation-name: example4;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      font-family: bonvenoCF;
+      font-size: 40px;
+      border: 5px solid white;
+      color: white;
+  }
+
+  @keyframes example4 {
+      0%   {background-color:#66c2ff; left:210px; top:400px;}
+      25%  {background-color:#66c2ff; left:210px; top:500px;}
+      50%  {background-color:#66c2ff; left:210px; top:400px;}
+      75%  {background-color:#66c2ff; left:210px; top:300px;}
+      100%  {background-color:#66c2ff; left:210px; top:400px;}
+
+  }
+  .div5 {
+      width: 60px;
+      height: 1000px;
+      position:fixed;
+      text-align: center;
+      animation-name: example5;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      font-family: bonvenoCF;
+      font-size: 40px;
+      border: 5px solid white;
+      color: white;
+  }
+
+  @keyframes example5 {
+      0%   {background-color:#c266ff; left:280px; top:550px;}
+      25%  {background-color:#c266ff; left:280px; top:400px;}
+      50%  {background-color:#c266ff; left:280px; top:500px;}
+      75%  {background-color:#c266ff; left:280px; top:200px;}
+      100%  {background-color:#c266ff; left:280px; top:550px;}
+
+  }
+  .div6 {
+      width: 60px;
+      height: 1000px;
+      position:fixed;
+      text-align: center;
+      animation-name: example6;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      font-family: bonvenoCF;
+      font-size: 40px;
+      border: 5px solid white;
+      color: white;
+  }
+
+  @keyframes example6 {
+      0%   {background-color:#ff66b3; left:350px; top:400px;}
+      25%  {background-color:#ff66b3; left:350px; top:350px;}
+      50%  {background-color:#ff66b3; left:350px; top:450px;}
+      75%  {background-color:#ff66b3; left:350px; top:550px;}
+      100%  {background-color:#ff66b3; left:350px; top:400px;}
+
+  }
+
+  .div7 {
+      width: 60px;
+      height: 1000px;
+      position:fixed;
+      text-align: center;
+      animation-name: example7;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      font-family: bonvenoCF;
+      font-size: 40px;
+      border: 5px solid white;
+      vertical-align:middle;
+      color: white;
+      padding-top: 15px;
+
+  }
+
+  @keyframes example7 {
+      0%   {background-color:#ff4d4d; left:420px; top:400px;}
+      25%  {background-color:#ff4d4d; left:420px; top:500px;}
+      50%  {background-color:#ff4d4d; left:420px; top:450px;}
+      75%  {background-color:#ff4d4d; left:420px; top:300px;}
+      100%  {background-color:#ff4d4d; left:420px; top:400px;}
+
+  }
+  .div8 {
+      width: 60px;
+      height: 1000px;
+      position:fixed;
+      text-align: center;
+      animation-name: example8;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      font-family: bonvenoCF;
+      font-size: 40px;
+      border: 5px solid white;
+      color: white;
+  }
+
+  @keyframes example8 {
+      0%   {background-color:#ffb366; left:490px; top:500px;}
+      25%  {background-color:#ffb366; left:490px; top:400px;}
+      50%  {background-color:#ffb366; left:490px; top:300px;}
+      75%  {background-color:#ffb366; left:490px; top:400px;}
+      100%  {background-color:#ffb366; left:490px; top:500px;}
+
+  }
+  .div9 {
+      width: 60px;
+      height: 1000px;
+      position:fixed;
+      text-align: center;
+      animation-name: example9;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      font-family: bonvenoCF;
+      font-size: 40px;
+      border: 5px solid white;
+      color: white;
+  }
+
+  @keyframes example9 {
+      0%   {background-color:#d5ff80; left:560px; top:550px;}
+      25%  {background-color:#d5ff80; left:560px; top:350px;}
+      50%  {background-color:#d5ff80; left:560px; top:400px;}
+      75%  {background-color:#d5ff80; left:560px; top:450px;}
+      100%  {background-color:#d5ff80; left:560px; top:550px;}
+
+  }
+  .div10 {
+      width: 60px;
+      height: 1000px;
+      position:fixed;
+      text-align: center;
+      animation-name: example10;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      font-family: bonvenoCF;
+      font-size: 40px;
+      border: 5px solid white;
+      color: white;
+  }
+
+  @keyframes example10 {
+      0%   {background-color:#66c2ff; left:630px; top:450px;}
+      25%  {background-color:#66c2ff; left:630px; top:500px;}
+      50%  {background-color:#66c2ff; left:630px; top:550px;}
+      75%  {background-color:#66c2ff; left:630px; top:500px;}
+      100%  {background-color:#66c2ff; left:630px; top:450px;}
+
+  }
+  .div11 {
+      width: 60px;
+      height: 1000px;
+      position:fixed;
+      text-align: center;
+      animation-name: example11;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      font-family: bonvenoCF;
+      font-size: 40px;
+      border: 5px solid white;
+      color: white;
+  }
+
+  @keyframes example11 {
+      0%   {background-color:#c266ff; left:700px; top:350px;}
+      25%  {background-color:#c266ff; left:700px; top:400px;}
+      50%  {background-color:#c266ff; left:700px; top:350px;}
+      75%  {background-color:#c266ff; left:700px; top:500px;}
+      100%  {background-color:#c266ff; left:700px; top:350px;}
+
+  }
+  .div12 {
+      width: 60px;
+      height: 1000px;
+      position:fixed;
+      text-align: center;
+      animation-name: example12;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      font-family: bonvenoCF;
+      font-size: 40px;
+      border: 5px solid white;
+      color: white;
+  }
+
+  @keyframes example12 {
+      0%   {background-color:#ff66b3; left:770px; top:400px;}
+      25%  {background-color:#ff66b3; left:770px; top:300px;}
+      50%  {background-color:#ff66b3; left:770px; top:600px;}
+      75%  {background-color:#ff66b3; left:770px; top:500px;}
+      100%  {background-color:#ff66b3; left:770px; top:400px;}
+
+  }
+  .div13 {
+      width: 60px;
+      height: 1000px;
+      position:fixed;
+      text-align: center;
+      animation-name: example13;
+      animation-iteration-count: infinite;
+      animation-duration: 2s;
+      font-family: bonvenoCF;
+      font-size: 40px;
+      border: 5px solid white;
+      color: white;
+  }
+
+  @keyframes example13 {
+      0%   {background-color:#ffb366; left:840px; top:500px;}
+      25%  {background-color:#ffb366; left:840px; top:400px;}
+      50%  {background-color:#ffb366; left:840px; top:300px;}
+      75%  {background-color:#ffb366; left:840px; top:400px;}
+      100%  {background-color:#ffb366; left:840px; top:500px;}
+
+  }
+  .div14 {
+      width: 60px;
+      height: 1000px;
+      position:fixed;
+      text-align: center;
+      animation-name: example14;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      font-family: bonvenoCF;
+      font-size: 40px;
+      border: 5px solid white;
+      color: white;
+  }
+
+  @keyframes example14 {
+      0%   {background-color:#ff4d4d; left:910px; top:550px;}
+      25%  {background-color:#ff4d4d; left:910px; top:450px;}
+      50%  {background-color:#ff4d4d; left:910px; top:500px;}
+      75%  {background-color:#ff4d4d; left:910px; top:250px;}
+      100%  {background-color:#ff4d4d; left:910px; top:550px;}
+
+  }
+  .div15 {
+      width: 60px;
+      height: 1000px;
+      position:fixed;
+      text-align: center;
+      animation-name: example15;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      font-family: bonvenoCF;
+      font-size: 40px;
+      border: 5px solid white;
+      color: white;
+  }
+
+  @keyframes example15 {
+      0%   {background-color:#66c2ff; left:980px; top:400px;}
+      25%  {background-color:#66c2ff; left:980px; top:550px;}
+      50%  {background-color:#66c2ff; left:980px; top:400px;}
+      75%  {background-color:#66c2ff; left:980px; top:350px;}
+      100%  {background-color:#66c2ff; left:980px; top:400px;}
+
+  }
+  .div16 {
+      width: 60px;
+      height: 1000px;
+      position:fixed;
+      text-align: center;
+      animation-name: example16;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      font-family: bonvenoCF;
+      font-size: 40px;
+      border: 5px solid white;
+      color: white;
+  }
+
+  @keyframes example16 {
+      0%   {background-color:#d5ff80; left:1050px; top:300px;}
+      25%  {background-color:#d5ff80; left:1050px; top:450px;}
+      50%  {background-color:#d5ff80; left:1050px; top:500px;}
+      75%  {background-color:#d5ff80; left:1050px; top:550px;}
+      100%  {background-color:#d5ff80; left:1050px; top:300px;}
+
+  }
+  .div17 {
+      width: 60px;
+      height: 1000px;
+      position:fixed;
+      text-align: center;
+      animation-name: example17;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      font-family: bonvenoCF;
+      font-size: 40px;
+      border: 5px solid white;
+      vertical-align:middle;
+      color: white;
+      padding-top: 15px;
+
+  }
+
+  @keyframes example17 {
+      0%   {background-color:#c266ff; left:1120px; top:500px;}
+      25%  {background-color:#c266ff; left:1120px; top:400px;}
+      50%  {background-color:#c266ff; left:1120px; top:350px;}
+      75%  {background-color:#c266ff; left:1120px; top:400px;}
+      100%  {background-color:#c266ff; left:1120px; top:500px;}
+
+  }
+
+  </style>
+  <body>
+    <a href="level5a.html"><div class="return"></div></a>
+    <a href="15 variations.html"><div class="home"></div></a>
+    <a href="level5c.html"><div class="next"></div></a>
+
+    <div class="div1">
+    J </div>
+    &nbsp;&nbsp;&nbsp;
+    <div class="div2">
+    O </div>
+    <div class="div3">
+    E </div>
+    <div class="div4">
+    Y </div>
+    <div class="div5">
+    I </div>
+    <div class="div6">
+    S </div>
+    <div class="div7">
+    A </div>
+    <div class="div8">
+    H </div>
+    <div class="div9">
+    E </div>
+    <div class="div10">
+    A </div>
+    <div class="div11">
+    D </div>
+    <div class="div12">
+    B </div>
+    <div class="div13">
+    A </div>
+    <div class="div14">
+    N </div>
+    <div class="div15">
+    G </div>
+    <div class="div16">
+    E </div>
+    <div class="div17">
+    R </div>
+    <div class="worse">
+      Worse is better.
