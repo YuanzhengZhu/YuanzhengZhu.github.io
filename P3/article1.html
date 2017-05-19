@@ -2,7 +2,7 @@
 
 <style>
 body{
-  background-color:black;
+  background-color:peachpuff;
 }
 ul
 {
@@ -19,7 +19,7 @@ a:link,a:visited
 {
 border:white 2px solid;
 display:block;
-width:280px;
+width:260px;
 font-weight:bold;
 color:#FFFFFF;
 background-color:black;
@@ -39,7 +39,7 @@ color:black;
 
   border:5px grey solid;
   width:60%;
-  height:2000px;
+  height:2050px;
   padding-top: 30px;
   padding-left: 15px;
   margin-left:20%;
@@ -56,7 +56,7 @@ color:black;
 
   border:4px black dotted;
   width:90%;
-  height:1600px;
+  height:1700px;
   padding: 10px;
   padding-left: 15px;
   font-family: cursive;
@@ -112,6 +112,50 @@ color:black;
     100% {opacity:1;}
 }
 
+* {
+  box-sizing: border-box;
+}
+
+.nav {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 7;
+  cursor: pointer;
+  color: black;
+}
+
+.menu {
+  height: 100vh;
+  width: 50vw;
+  background-color: skyblue;
+  position: fixed;
+  right: -50vw;
+  top: 0px;
+  z-index: 6;
+  transition: all 2s;
+}
+
+.menu.showme {
+  right: 0;
+  transition: all 2s;
+}
+
+.main {
+  transition: all 2s;
+  margin-top: -0px;
+}
+
+.main.moveleft {
+  margin-top: -40vw;
+  transition: all 2s;
+}
+
+.backtotop {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+}
 </style>
 <body>
 <ul>
@@ -120,7 +164,7 @@ color:black;
 <li><a href="article2.html">Article 2</a></li>
 <li><a href="article3.html">Article 3</a></li>
 </ul>
-<span id="blink" >EMOJI<br> READER</span>
+
 <img class="float1" style="margin-left:5%;margin-top:0%;"  src="assets/images/emojiface.png" alt="">
 <img class="float1" style="margin-left:85%;margin-top:0%;"  src="assets/images/emojiface1.png" alt="">
 <img class="float2" style="margin-left:0%;margin-top:10%;"  src="assets/images/emojiface2.png" alt="">
@@ -208,4 +252,11 @@ Gradually, the smiley became a pop-culture icon, distributed on buttons and T-sh
  came via Carnegie Mellon’s Scott E. Fahlman, who typed :-) on a university bulletin
  board in 1982 in the midst of talking about something else entirely.</span></p>
 </div> </div>
+<div class="nav">
+  Menu
+</div>
+<div class="menu">
+  <div class="menu__list">
+    item 1 <br> item 2 <br> item 3 <br> item 4
+  </div> </div>
 </body>
