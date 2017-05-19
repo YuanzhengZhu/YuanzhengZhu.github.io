@@ -1,0 +1,19 @@
+<p class="bigtext">
+  <style>
+.intro p{
+font-size:24px;
+}
+.quate p{
+  color: red;
+}
+.intro ul.subitems li{
+  list-style: none;
+}
+.intro ul li{
+
+}
+</style>
+
+<body>
+  <div class="quate bgc">
+    <h2 class
