@@ -1,0 +1,286 @@
+<title>article 1</title>
+
+<style>
+body{
+  background-color:peachpuff;
+}
+ul
+{
+list-style-type:none;
+margin:0;
+padding:0;
+overflow:hidden;
+}
+li
+{
+float:left;
+}
+a:link,a:visited
+{
+border:white 2px solid;
+display:block;
+width:260px;
+font-weight:bold;
+color:#FFFFFF;
+background-color:black;
+text-align:center;
+padding:10px;
+text-decoration:none;
+text-transform:uppercase;
+
+}
+a:hover,a:active
+{
+background-color:#ffeecc;
+color:black;
+}
+
+.text{
+
+  border:5px grey solid;
+  width:60%;
+  height:2050px;
+  padding-top: 30px;
+  padding-left: 15px;
+  margin-left:20%;
+  margin-top:10%;
+  margin-bottom:10%;
+  background-color:white;
+  z-index:2;
+  text-align: center;
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 50px;
+}
+.text2{
+
+  border:4px black dotted;
+  width:90%;
+  height:1700px;
+  padding: 10px;
+  padding-left: 15px;
+  font-family: cursive;
+  margin-left:10px;
+  margin-top:10px;
+  margin-bottom:20%;
+  background-color:white;
+  z-index:3;
+  font-size: 20px;
+  text-align: left;
+  font-weight: normal;
+
+}
+.font{
+  font-family: Times;
+  font-weight: normal;
+
+}
+.author{
+  font-size: 15px;
+  font-family: arial;
+  font-weight: lighter;
+
+}
+.float1{
+	border:none;
+  width:30px;
+  height:30px;
+	position: fixed;
+	animation-iteration-count: infinite;
+	animation-name: example1;
+	animation-duration: 0.5s;
+  z-index:2;
+}
+
+	@keyframes example1 {
+    0%   {opacity:1;}
+    100% {opacity:0;}
+}
+.float2{
+	border:none;
+  width:30px;
+  height:30px;
+	position: fixed;
+	animation-iteration-count: infinite;
+	animation-name: example2;
+	animation-duration: 0.5s;
+  z-index:1;
+}
+
+	@keyframes example2 {
+    0%   {opacity:0;}
+    100% {opacity:1;}
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.nav {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 7;
+  cursor: pointer;
+  color: black;
+}
+
+.menu {
+  height: 100vh;
+  width: 50vw;
+  background-color: skyblue;
+  position: fixed;
+  right: -50vw;
+  top: 0px;
+  z-index: 6;
+  transition: all 2s;
+}
+
+.menu.showme {
+  right: 0;
+  transition: all 2s;
+}
+
+.main {
+  transition: all 2s;
+  margin-top: -0px;
+}
+
+.main.moveleft {
+  margin-top: -40vw;
+  transition: all 2s;
+}
+
+.backtotop {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+}
+.rollover {
+  color: red;
+}
+
+.rollover:hover {
+  color: blue;
+}
+.blur {
+  position: fixed;
+  opacity: 0;
+  filter: blur(20px);
+  transition: all 2s;
+  pointer-events: none;
+}
+
+.blur.showme {
+  opacity: 1;
+  transition: all 2s;
+  filter: blur(0px);
+}
+.rollover__image {
+  top: 20px;
+  right: 100px;
+}
+</style>
+<body>
+<ul>
+<li><a href="homepage.html">Home</a></li>
+<li><a href="article1.html">Article 1</a></li>
+<li><a href="article2.html">Article 2</a></li>
+<li><a href="article3.html">Article 3</a></li>
+</ul>
+
+<img class="float1" style="margin-left:5%;margin-top:0%;"  src="assets/images/emojiface.png" alt="">
+<img class="float1" style="margin-left:85%;margin-top:0%;"  src="assets/images/emojiface1.png" alt="">
+<img class="float2" style="margin-left:0%;margin-top:10%;"  src="assets/images/emojiface2.png" alt="">
+<img class="float2" style="margin-left:10%;margin-top:10%;"  src="assets/images/emojiface3.png" alt="">
+<img class="float2" style="margin-left:80%;margin-top:10%;"  src="assets/images/emojiface4.png" alt="">
+<img class="float2" style="margin-left:90%;margin-top:10%;"  src="assets/images/emojiface5.png" alt="">
+<img class="float1" style="margin-left:5%;margin-top:20%;"  src="assets/images/emojiface.png" alt="">
+<img class="float1" style="margin-left:85%;margin-top:20%;"  src="assets/images/emojiface1.png" alt="">
+<img class="float2" style="margin-left:0%;margin-top:30%;"  src="assets/images/emojiface2.png" alt="">
+<img class="float2" style="margin-left:10%;margin-top:30%;"  src="assets/images/emojiface3.png" alt="">
+<img class="float2" style="margin-left:80%;margin-top:30%;"  src="assets/images/emojiface4.png" alt="">
+<img class="float2" style="margin-left:90%;margin-top:30%;"  src="assets/images/emojiface5.png" alt="">
+<img class="float1" style="margin-left:5%;margin-top:40%;"  src="assets/images/emojiface.png" alt="">
+<img class="float1" style="margin-left:85%;margin-top:40%;"  src="assets/images/emojiface1.png" alt="">
+<img class="float2" style="margin-left:0%;margin-top:50%;"  src="assets/images/emojiface2.png" alt="">
+<img class="float2" style="margin-left:10%;margin-top:50%;"  src="assets/images/emojiface3.png" alt="">
+<img class="float2" style="margin-left:80%;margin-top:50%;"  src="assets/images/emojiface4.png" alt="">
+<img class="float2" style="margin-left:90%;margin-top:50%;"  src="assets/images/emojiface5.png" alt="">
+<img class="float1" style="margin-left:5%;margin-top:60%;"  src="assets/images/emojiface.png" alt="">
+<img class="float1" style="margin-left:85%;margin-top:60%;"  src="assets/images/emojiface1.png" alt="">
+<img class="float2" style="margin-left:0%;margin-top:70%;"  src="assets/images/emojiface2.png" alt="">
+<img class="float2" style="margin-left:10%;margin-top:70%;"  src="assets/images/emojiface3.png" alt="">
+<img class="float2" style="margin-left:80%;margin-top:70%;"  src="assets/images/emojiface4.png" alt="">
+<img class="float2" style="margin-left:90%;margin-top:70%;"  src="assets/images/emojiface5.png" alt="">
+
+
+
+<div class="text">
+  The Conservatism of Emoji<br><br>
+  <span class="author">By LUKE STARK AND KATE CRAWFORDAUGUST 20, 2014</span><br><br>
+   <div class="text2">
+  <p><span class="font">Emoji offer you new possibilities for digital expression, but only if
+    you’re speaking their language.</span></p>
+<br>
+ <em>If you smile through your fear and sorrow
+  Smile and maybe tomorrow
+  You’ll see the sun come shining through for you.</em>
+<p>—Nat King Cole, “Smile”</p>
+<br><p><span class="font">The world will soon have its first emoji-only social network: Emoj.li.
+This news, announced in late June, was met with a combination of scorn and
+amusement from the tech press. It was seen as another entry in the
+gimmick-social-network category, to be filed alongside Yo. Yet emoji have a
+rich and complex history behind the campy shtick: From the rise of the smiley
+in the second half of the 20th century, emoji emerged out of corporate strategies,
+copyright claims, and standards disputes to become a ubiquitous digital shorthand.
+And in their own, highly compressed lexicon, emoji are trying to tell us something
+about the nature of feelings, of labor, and the new horizons of capitalism.
+They are the signs of our times.</span></p>
+<br><p><span class="font">Innocuous and omnipresent, emoji are the social lubricant smoothing the
+rough edges of our digital lives: They underscore tone, introduce humor, and give
+us a quick way to bring personality into otherwise monochrome spaces.
+All this computerized work is, according to Michael Hardt, one face of what
+he terms immaterial labor, or “labor that produces an immaterial good, such as
+a service, knowledge, or communication.” “We increasingly think like computers,”
+he writes, but “the other face of immaterial labor is the affective labor
+of human conduct and interaction” — all those fast-food greetings, the casual
+banter with the Uber driver, the flight attendant’s smile, the nurse patting
+your arm as the needle goes in. <em>Affective labor</em> is another term for what sociologist
+Arlie Russell Hochschild calls “emotional labor,” the commercialization of
+feelings that smooth our social interactions on a daily basis. What if we could
+integrate our understand of these two faces of immaterial labor through the
+image of yet another face?</span></p>
+<img  class="rollover__image" style="width:80px; height:80px; margin-left:45%;" src="assets/images/smile.jpg">
+
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span class="rollover"><em>Emoji as Historical Artifacts</em></span>
+<br><p><span class="font">
+The smiley face is now so endemic to American culture that it’s easy to forget it
+is an invented artifact. The 1963 merger of the State Mutual Life Assurance Company
+of Worcester, Mass., and Ohio’s Guarantee Mutual Company would be unremembered were
+it not for one thing: :), or something very much like it. An advertising man named
+Harvey Ball doodled a smiling yellow face at the behest of State Mutual’s management,
+who were in need of an internal PR campaign to improve morale after the turmoil and
+job losses prompted by the merger. The higher-ups loved it. “The power of a smile
+is unlimited,” proclaimed The Mutualite, the company’s internal magazine, “a smile
+is contagious…vital to business associations and to society.” Employees were
+encouraged to smile while talking to clients on the phone and filling out insurance
+forms. Ball was paid $240 for the campaign, including $45 for the rights to his
+smiley-face image.</span></p>
+<br><p><span class="font">
+Gradually, the smiley became a pop-culture icon, distributed on buttons and T-shirts,
+ beloved of acid-house record producers. Its first recognized digital instantiation
+ came via Carnegie Mellon’s Scott E. Fahlman, who typed :-) on a university bulletin
+ board in 1982 in the midst of talking about something else entirely.</span></p>
+</div> </div>
+<div class="nav">
+  Menu
+</div>
+<div class="menu">
+  <div class="menu__list">
+    item 1 <br> item 2 <br> item 3 <br> item 4
+  </div> </div>
+</body>
