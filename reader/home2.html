@@ -1,0 +1,40 @@
+
+<body>
+
+<div class="rollover"></div>
+<img class="rollovered" src="assets/images/face1.png">
+<div class="rollovered"></div>
+</body>
+
+<style>
+.rollover{
+  border:solid black 1px;
+  width:50px;
+  height: 50px;
+  background-color: red;
+  margin-left: 30px;
+}
+.rollover:hover{
+background-color:blue;
+}
+.rollovered{
+  position: fixed;
+  display: none;
+  pointer-events: none;
+  opacity: 1;
+  border:solid black solid 1px;
+  width:50px;
+  height: 50px;
+  background-color: red;
+}
+.rollovered.showme{
+    display:block;
+    opacity: 1;
+    transition: all 2s;
+    margin-left: 50px;
+    border:solid black solid 1px;
+    width:50px;
+    height: 50px;
+    color:blue;
+  }
+</style>
