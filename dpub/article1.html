@@ -1,0 +1,375 @@
+<title>article 1</title>
+<head>
+  <meta charset="utf-8">
+
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script src="assets/js/jquery-3.2.0.min.js" charset="utf-8"></script>
+  <script src="assets/js/main.js" charset="utf-8"></script>
+</head>
+<style>
+body{
+  background-color:peachpuff;
+}
+* {
+  box-sizing:border-box;
+}
+/* title */
+.row {
+  display:flex;
+  flex-wrap:wrap;
+}
+
+.col__1of4 {
+  flex:0 0 25%;
+}
+
+.content {
+  padding: 10px;
+  margin: 0px;
+  color:#FFFFFF;
+  background-color:black;
+  text-align:center;
+  padding:10px;
+  text-decoration-color: none;
+  text-decoration-line: none;
+  text-transform:uppercase;
+  border:white 2px solid;
+  font-weight:bold;
+}
+.content:hover{
+  background-color:#ffeecc;
+  color:black;
+}
+
+/* title */
+
+.titlecolor{
+  color:black;
+}
+.titlecolor:hover{
+  color:#ed904e;
+}
+/* text */
+.quote{
+  color:black;
+}
+.quote:hover{
+  text-shadow: 1px 1px 2px #ed904e;
+}
+
+.text{
+
+  border:5px grey solid;
+  width:60%;
+
+  padding-top: 30px;
+  padding-left: 15px;
+  margin-left:20%;
+  margin-top:10%;
+  margin-bottom:10%;
+  background-color:white;
+  z-index:3;
+  text-align: center;
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 50px;
+}
+.text2{
+
+  border:4px black dotted;
+  width:90%;
+line-height: 30px;
+  padding: 10px;
+  padding-left: 15px;
+  font-family: cursive;
+  margin-left:4%;
+  margin-top:10px;
+  margin-bottom:20%;
+  background-color:white;
+  z-index:3;
+  font-size: 20px;
+  text-align: left;
+  font-weight: normal;
+
+
+}
+.font{
+  font-family: Times;
+  font-weight: normal;
+
+}
+.author{
+  font-size: 15px;
+  font-family: arial;
+  font-weight: lighter;
+
+}
+
+/* background */
+
+.float1{
+	border:none;
+  width:30px;
+  height:30px;
+	position: fixed;
+	animation-iteration-count: infinite;
+	animation-name: example1;
+	animation-duration: 1s;
+  z-index:2;
+}
+
+	@keyframes example1 {
+    0%   {opacity:1;}
+    100% {opacity:0;}
+}
+.float2{
+	border:none;
+  width:30px;
+  height:30px;
+	position: fixed;
+	animation-iteration-count: infinite;
+	animation-name: example2;
+	animation-duration: 1s;
+  z-index:1;
+}
+
+	@keyframes example2 {
+    0%   {opacity:0;}
+    100% {opacity:1;}
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.nav {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 7;
+  cursor: pointer;
+  color: black;
+}
+.imagetitle{
+  margin-left: 30%;
+}
+.underline{
+  border-bottom:1.5px dotted black;
+}
+.underline:hover{
+  color:	#02C874;
+  border-bottom: solid 1.5px 	#02C874;
+}
+
+/* buttons */
+
+.back{
+  color:white;
+  border: white 2px solid;
+  background-color: black;
+  text-align: center;
+  width:10%;
+  margin-left: 45%;
+  text-transform: uppercase;
+  padding: 10px;
+  text-decoration: none;
+}
+.back:hover{
+  background-color: #ffeecc;
+  color:black;
+}
+.pre{
+  position: fixed;
+  width:8%;
+  top: 80%;
+  left: 10%;
+  z-index: 2;
+}
+.next{
+  position: fixed;
+  top: 80%;
+  left: 82%;
+  width:8%;
+  z-index: 2;
+}
+
+.rollover{
+  border-bottom:1.5px dotted black;
+}
+.rollover:hover{
+  color:peachpuff;
+  border-bottom: solid 1.5px peachpuff;
+
+}
+.rollovered
+{
+  position: fixed;
+  display:none;
+  pointer-events: none;
+}
+.rollovered.showme{
+  display: block;
+  opacity: 1;
+  transition:all 2s;
+
+}
+/* image */
+.image{
+  width:80px;
+  height:80px;
+  margin-left:45%;
+}
+.image:hover{
+  width: 120px;
+  height: 120px;
+  transition-duration: 2s;
+}
+.ll__image{
+  width: 12%;
+}
+.l__image{
+  width: 12%;
+}
+.lll__image{
+  width: 15%;
+}
+.punc{
+  color:#02C874;
+  font-size: 20px;
+}
+.punc:hover{
+  color:red;
+  font-size: 80px;
+  transition-duration: 2s;
+}
+</style>
+<body>
+  <div class="row">
+
+  <div class="col__1of4">
+    <div class="content">
+      <a  style="color:#ed904e;text-decoration:none;"href="index.html">Home</a>
+    </div>
+  </div>
+
+  <div class="col__1of4">
+    <div class="content">
+      <a style="color:#ed904e;text-decoration:none;"href="article1.html">Article 1</a>
+    </div>
+  </div>
+
+  <div class="col__1of4">
+    <div class="content">
+    <a style="color:#ed904e;text-decoration:none;"href="article2.html">Article 2</a>
+    </div>
+  </div>
+  <div class="col__1of4">
+    <div class="content">
+    <a style="color:#ed904e;text-decoration:none;"href="article3.html">Article 3</a>
+    </div>
+  </div>
+
+</div>
+
+<img class="float1" style="margin-left:5%;margin-top:1%;"  src="assets/images/emojiface.png" alt="">
+<img class="float1" style="margin-left:20%;margin-top:1%;"  src="assets/images/emojiface1.png" alt="">
+<img class="float1" style="margin-left:36%;margin-top:1%;"  src="assets/images/emojiface2.png" alt="">
+<img class="float1" style="margin-left:51%;margin-top:1%;"  src="assets/images/emojiface3.png" alt="">
+<img class="float1" style="margin-left:67%;margin-top:1%;"  src="assets/images/emojiface4.png" alt="">
+<img class="float1" style="margin-left:85%;margin-top:1%;"  src="assets/images/emojiface5.png" alt="">
+<img class="float2" style="margin-left:0%;margin-top:10%;"  src="assets/images/emojiface2.png" alt="">
+<img class="float2" style="margin-left:10%;margin-top:10%;"  src="assets/images/emojiface3.png" alt="">
+<img class="float2" style="margin-left:80%;margin-top:10%;"  src="assets/images/emojiface4.png" alt="">
+<img class="float2" style="margin-left:90%;margin-top:10%;"  src="assets/images/emojiface5.png" alt="">
+<img class="float1" style="margin-left:5%;margin-top:20%;"  src="assets/images/emojiface.png" alt="">
+<img class="float1" style="margin-left:85%;margin-top:20%;"  src="assets/images/emojiface1.png" alt="">
+<img class="float2" style="margin-left:0%;margin-top:30%;"  src="assets/images/emojiface2.png" alt="">
+<img class="float2" style="margin-left:10%;margin-top:30%;"  src="assets/images/emojiface3.png" alt="">
+<img class="float2" style="margin-left:80%;margin-top:30%;"  src="assets/images/emojiface4.png" alt="">
+<img class="float2" style="margin-left:90%;margin-top:30%;"  src="assets/images/emojiface5.png" alt="">
+<img class="float1" style="margin-left:5%;margin-top:40%;"  src="assets/images/emojiface.png" alt="">
+<img class="float1" style="margin-left:85%;margin-top:40%;"  src="assets/images/emojiface1.png" alt="">
+<img class="float2" style="margin-left:0%;margin-top:50%;"  src="assets/images/emojiface2.png" alt="">
+<img class="float2" style="margin-left:10%;margin-top:50%;"  src="assets/images/emojiface3.png" alt="">
+<img class="float2" style="margin-left:80%;margin-top:50%;"  src="assets/images/emojiface4.png" alt="">
+<img class="float2" style="margin-left:90%;margin-top:50%;"  src="assets/images/emojiface5.png" alt="">
+<img class="float1" style="margin-left:5%;margin-top:60%;"  src="assets/images/emojiface.png" alt="">
+<img class="float1" style="margin-left:85%;margin-top:60%;"  src="assets/images/emojiface1.png" alt="">
+<img class="float2" style="margin-left:0%;margin-top:70%;"  src="assets/images/emojiface2.png" alt="">
+<img class="float2" style="margin-left:10%;margin-top:70%;"  src="assets/images/emojiface3.png" alt="">
+<img class="float2" style="margin-left:80%;margin-top:70%;"  src="assets/images/emojiface4.png" alt="">
+<img class="float2" style="margin-left:90%;margin-top:70%;"  src="assets/images/emojiface5.png" alt="">
+
+<img class="rollovered ll__image" style="position:fixed; margin-left:7%; margin-top:12%; z-index:6;"src="assets/images/MH.jpg" alt="">
+<img class="rollovered l__image" style="position:fixed; margin-left:7%; margin-top:12%; z-index:6;"src="assets/images/nat.jpg" alt="">
+<img class="rollovered lll__image" style="position:fixed; margin-left:4%; margin-top:12%; z-index:6;"src="assets/images/scott.jpg" alt="">
+
+<div class="text"><br>
+  <span class="titlecolor">T</span><span class="titlecolor">h</span><span class="titlecolor">e</span><span class="titlecolor"></span>
+  <span class="titlecolor">C</span><span class="titlecolor">o</span><span class="titlecolor">n</span><span class="titlecolor">s</span><span class="titlecolor">e</span><span class="titlecolor">r</span><span class="titlecolor">v</span><span class="titlecolor">a</span><span class="titlecolor">t</span><span class="titlecolor">i</span><span class="titlecolor">s</span><span class="titlecolor">m</span>
+  <span class="titlecolor">o</span><span class="titlecolor">f</span>
+  <span class="titlecolor">E</span><span class="titlecolor">m</span><span class="titlecolor">o</span><span class="titlecolor">j</span><span class="titlecolor">i</span><br><br>
+  <span class="author">By LUKE STARK AND KATE CRAWFORD AUGUST 20, 2014</span><br><br>
+   <div class="text2">
+  <p><span class="font">Emoji offer you new possibilities for digital expression, but only if
+    you’re speaking their language.</span></p>
+<br>
+ <em><span class="quote">If you smile through your fear and sorrow
+  Smile and maybe tomorrow
+  You’ll see the sun come shining through for you.</span></em>
+<p>—<span class="rollover l">Nat King Cole</span>, “Smile”</p>
+<br><p><span class="font">The world will soon have its <a style="text-decoration:none; color: black;" href="http://emoj.li"> <span class="underline">emoji-only social network: Emoj.li.</span></a>
+This news, announced in late June, was met with a combination of scorn and
+amusement from the tech press. It was seen as another entry in the
+gimmick-social-network category, to be filed alongside Yo. Yet emoji have a
+rich and complex history behind the campy shtick: From the rise of the smiley
+in the second half of the 20th century, emoji emerged out of corporate strategies,
+copyright claims, and standards disputes to become a ubiquitous digital shorthand.
+And in their own, highly compressed lexicon, emoji are trying to tell us something
+about the nature of feelings, of labor, and the new horizons of capitalism.
+They are the signs of our times.</span></p>
+<br><p><span class="font">Innocuous and omnipresent, emoji are the social lubricant smoothing the
+rough edges of our digital lives: They underscore tone, introduce humor, and give
+us a quick way to bring personality into otherwise monochrome spaces.
+All this computerized work is, according to <span class="rollover ll">Michael Hardt</span>, one face of what
+he terms immaterial labor, or “labor that produces an immaterial good, such as
+a service, knowledge, or communication.” “We increasingly think like computers,”
+he writes, but “the other face of immaterial labor is the affective labor
+of human conduct and interaction” — all those fast-food greetings, the casual
+banter with the Uber driver, the flight attendant’s smile, the nurse patting
+your arm as the needle goes in. <em>Affective labor</em> is another term for what sociologist
+Arlie Russell Hochschild calls “emotional labor,” the commercialization of
+feelings that smooth our social interactions on a daily basis. What if we could
+integrate our understand of these two faces of immaterial labor through the
+image of yet another face?</span></p>
+<img  class="image"  src="assets/images/smile.jpg">
+
+<br>
+<span class="imagetitle"<em>Emoji as Historical Artifacts</em></span>
+<br><p><span class="font">
+The smiley face is now so endemic to American culture that it’s easy to forget it
+is an invented artifact. The 1963 merger of the State Mutual Life Assurance Company
+of Worcester, Mass., and Ohio’s Guarantee Mutual Company would be unremembered were
+it not for one thing: :), or something very much like it. An advertising man named
+Harvey Ball doodled a smiling yellow face at the behest of State Mutual’s management,
+who were in need of an internal PR campaign to improve morale after the turmoil and
+job losses prompted by the merger. The higher-ups loved it. “The power of a smile
+is unlimited,” proclaimed The Mutualite, the company’s internal magazine, “a smile
+is contagious…vital to business associations and to society.” Employees were
+encouraged to smile while talking to clients on the phone and filling out insurance
+forms. Ball was paid $240 for the campaign, including $45 for the rights to his
+smiley-face image.</span></p>
+<br><p><span class="font">
+Gradually, the smiley became a pop-culture icon, distributed on buttons and T-shirts,
+ beloved of acid-house record producers. Its first recognized digital instantiation
+ came via Carnegie Mellon’s <span class="rollover lll">Scott E. Fahlman</span>, who typed <span class="punc">:-)</span> on a university bulletin
+ board in 1982 in the midst of talking about something else entirely.</span></p><br><br>
+</div> </div>
+
+  <a style="text-decoration:none;"href="article1.html">
+    <div class="back">back to top</div></a>
+
+    <a href="article3.html"> <img class="pre" src="assets/images/pre.png" alt=""></img></a>
+    <a href="article2.html"> <img class="next" src="assets/images/next.png" alt=""></img></a>
+
+</body>
